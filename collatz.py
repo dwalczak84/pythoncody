@@ -27,3 +27,17 @@ def collatz(n):
             c.append(3 * n + 1)
         n = c[-1]
     return(c)
+    
+ 
+
+# version using Numpy:   
+# def collatz(n):
+#    import numpy as np
+#    c = np.array([n])
+#    
+#    while c[-1] != 1:
+#        if c[-1] % 2 == 0:
+#            c = np.append([c], c[-1] / 2)
+#        else:
+#            c = np.append([c], 3 * c[-1] + 1)
+#    print(c)

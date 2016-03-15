@@ -23,6 +23,6 @@ def Nth_polite(n):
     import numpy as np    
     A =  pow(2, np.arange(0, 35, dtype = float))
     if n < 1e7:
-        return(np.delete(np.arange(1, 1e7), A - 1)[n-1])
+        return(np.int(np.delete(np.arange(1, 1e7), A - 1)[n-1]))
     else:
         return(int((n + sum(n > A))))
